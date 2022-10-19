@@ -16,7 +16,7 @@
     <!-- this line loads up your compiled target images -->
     <!-- place the .mind file in the same folder as this index.html file -->
     <!-- and then mindar-image="name-of-file.mind;" -->
-    <a-scene mindar-image="imageTargetSrc: targets(1).mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     
       
       
@@ -42,7 +42,7 @@
       <!-- the first of your targets is 0, the second is 1, the third is 2 -->
       <!-- the next lines specify what to load and where to position it when an image is detected -->
       
-      <a-entity mindar-image-target="targetIndex: 0">
+      <a-entity mindar-image-target="targetIndex: 2">
         <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#raccoonModel" animation-mixer>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
